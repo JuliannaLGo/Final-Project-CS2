@@ -1,49 +1,65 @@
 # 📌 Project Proposal (Draft)
 
 ## 📝 Project Title  
-*Enter your initial project title here.*  
+Library Borrowing Records  
 
 ---
 
 ## 🔍 Problem Statement  
-What real-world problem does your project want to solve?  
-- Describe the issue or need you identified.  
-- Explain why this problem is relevant and worth solving.  
-- Relate the problem to the dataset you selected (e.g., hospital, ecommerce, students, etc.).  
+Problem: Digital world overtakes the world of reading 
+- This problem is relevant and worth solving because nowadays, people are glued to their gadgets unlike the old days when all we had were books. Although you can learn something from the internet, too much exposure may damage your eyes, unlike books.
+- This problem can relate to our data set, which is from a library, because we can track how many people are still reading books and possibly promote reading to others. 
+
 
 ---
 
 ## 🎯 Project Objectives  
-Write at least **2–3 clear objectives** your project aims to achieve. Example:  
-- Objective 1: To analyze and summarize data from the chosen JSON dataset.  
-- Objective 2: To help users gain meaningful insights (e.g., averages, trends, patterns).  
-- Objective 3: To practice JSON handling and Python programming concepts.  
+Objective 1: To identify key patterns and trends within the given data, such as averages, correlations, etc, that will provide valuable insights to users and easy analysis.
+
+Objective 2: To create an interactive tool that allows users to visualize the data in meaningful ways to facilitate decision-making, and to easily find what they need or what they're looking for.
+
+Objective 3: To integrate user-friendly features such as search filters and custom queries, making it easier for users to extract specific insights based on their needs, as well as the data that matches their requirements.
 
 ---
 
 ## ⚙️ Planned Features  
-Your program must have **at least 5 features (minimum)**.  
-We have provided **2 starter ideas** for each dataset — you must design **at least 3 additional features**.  
+1.) Show which books are still borrowed (not yet returned)
+Displays all books where return_date is null.
 
-- Feature 1: *(Starter idea)*  
-- Feature 2: *(Starter idea)*  
-- Feature 3: *(Your own idea)*  
-- Feature 4: *(Your own idea)*  
-- Feature 5: *(Your own idea)*  
+2.) Count how many books each borrower has checked out
+Counts total books borrowed (returned or not) per student.
 
-*(You may add more features if you like.)*  
+3.) Show currently borrowed books per student
+Displays a student’s name and only the books they haven’t returned.
+
+4.) Gives reccomendations based on borrow history
+Uses borrow history of the student to give new reccomendations
+
+5.) List all on-hand books by category
+Shows how many books are currently on-hand (in the library)
+
+6.) Gives book based on product number/ID
+
+7.) Tracks library visits and book borrows
+
+
+
 
 ---
 
 ## ⌨️ Planned Inputs and Outputs  
 
-- **Inputs**  
-  - What kind of data will the user provide (if any)?  
-  - Example: student ID, date range, product name  
+- **Inputs**
+  - student ID number
+  - category/genre (like fiction, romance, etc.)
+  - book/product ID/number
 
 - **Outputs**  
-  - What kind of results will your program display?  
-  - Example: class averages, top products, weather summary  
+  - borrow history
+  - current books not returned
+  - book reccomendations
+  - book/product
+  - tracker of library visits and # of books borrowed
 
 ---
 
