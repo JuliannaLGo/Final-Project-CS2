@@ -32,15 +32,13 @@ Objective 3: To integrate user-friendly features such as search filters and cust
 3.) Show currently borrowed books per student
 - Displays a student’s name and only the books they haven’t returned.
 
-4.) Gives reccomendations based on borrow history
-- Uses borrow history of the student to give new reccomendations
+4.) Displays a student's full borrow history
+- Shows the entire borrow history (including current borrows) of a student by inputting their borrower_id.
 
-5.) List all on-hand books by category
-- Shows how many books are currently on-hand (in the library)
+5.) Lists books by author
+- Shows all books by a certain inputted author name. 
 
-6.) Gives book based on product number/ID
-
-7.) Tracks library visits and book borrows
+6.) Searches book by name
 
 
 
