@@ -49,15 +49,14 @@ Objective 3: To integrate user-friendly features such as search filters and cust
 
 - **Inputs**
   - student ID number
-  - category/genre (like fiction, romance, etc.)
-  - book/product ID/number
+  - author name
+  - book/product name
 
 - **Outputs**  
   - borrow history
   - current books not returned
-  - book reccomendations
+  - books written by specific author
   - book/product
-  - tracker of library visits and # of books borrowed
 
 ---
 
@@ -65,12 +64,44 @@ Objective 3: To integrate user-friendly features such as search filters and cust
 Choose **ONE** way to describe your program’s logic:  
 
 ### Option 1: Pseudocode  
-Write your steps in plain English. Example:  
-Load JSON file
-Display menu of features
-If user chooses "1", compute average grade per student
-If user chooses "2", list all borrowed books
-Repeat until user exits program
+Start
+Load JSON file containing library borrow history
+
+Display menu of features:
+1.) Show books not returned yet
+2.) Show total number of books borrowed (per student)
+3.) Show currently borrowed books (per student)
+4.) Show books by author
+5.) Search book by name
+6.) Exit program
+
+Ask user to choose a feature
+
+IF user chooses 1:
+    Display all books where return_date is "null"
+
+ELSE IF user chooses 2:
+   Ask user to enter borrower_id
+   List all books borrowed by the student
+   
+ELSE IF user chooses 3:
+    Ask user to enter borrower_id
+    List all books where return_date is "null" under that       student, otherwise show "You have no currently borrowed books."
+    
+ELSE IF user chooses 4:
+    Ask user to enter author
+    List all books written by that author, otherwise display "Items not found."
+
+ELSE IF user chooses 5:
+    Ask user to enter book_title
+    Search JSON data for matching item
+    Display item details if found, otherwise display "Item not found."
+
+ELSE IF user chooses 6:
+    End program
+
+Repeat menu until user chooses to exit
+End Program
 
 
 ### Option 2: Flowchart  
