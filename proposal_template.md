@@ -24,19 +24,19 @@ Objective 3: To integrate user-friendly features such as search filters and cust
 
 ## ⚙️ Planned Features  
 1.) Show which books are still borrowed (not yet returned)
-Displays all books where return_date is null.
+- Displays all books where return_date is null.
 
 2.) Count how many books each borrower has checked out
-Counts total books borrowed (returned or not) per student.
+- Counts total books borrowed (returned or not) per student.
 
 3.) Show currently borrowed books per student
-Displays a student’s name and only the books they haven’t returned.
+- Displays a student’s name and only the books they haven’t returned.
 
 4.) Gives reccomendations based on borrow history
-Uses borrow history of the student to give new reccomendations
+- Uses borrow history of the student to give new reccomendations
 
 5.) List all on-hand books by category
-Shows how many books are currently on-hand (in the library)
+- Shows how many books are currently on-hand (in the library)
 
 6.) Gives book based on product number/ID
 
