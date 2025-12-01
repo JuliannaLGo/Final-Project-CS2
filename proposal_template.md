@@ -111,6 +111,6 @@ Attach or draw a flowchart showing how the program will work.
 
 ## 📂 GitHub Repository Link  
 Paste your GitHub repository link here:  
-`https://github.com/username/project-proposal`  
+https://github.com/JuliannaLGo/Final-Project-CS2 
 
 ---
