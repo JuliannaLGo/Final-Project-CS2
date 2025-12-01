@@ -1,4 +1,4 @@
-# 📌 Project Proposal (Draft)
+z# 📌 Project Proposal (Draft)
 
 ## 📝 Project Title  
 Library Borrowing Records  
@@ -105,11 +105,11 @@ End Program
 
 
 ### Option 2: Flowchart  
-Attach or draw a flowchart showing how the program will work.  
+  
  ![a7665bc9-37c2-412f-8525-4619697e12e4](https://github.com/user-attachments/assets/d87f3837-9d51-4b34-9025-ea3b39b3d1ac)
 ---
 
-## 📂 GitHub Repository Link  
-Paste your GitHub repository link here:  
+## 📂 GitHub Repository Link
 https://github.com/JuliannaLGo/Final-Project-CS2
+
 ---
