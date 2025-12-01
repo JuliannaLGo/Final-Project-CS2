@@ -1,4 +1,4 @@
-z# 📌 Project Proposal (Draft)
+📌 Project Proposal (Draft)
 
 ## 📝 Project Title  
 Library Borrowing Records  
