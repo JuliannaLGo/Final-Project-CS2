@@ -64,49 +64,75 @@ Objective 3: To integrate user-friendly features such as search filters and cust
 Choose **ONE** way to describe your program’s logic:  
 
 ### Option 1: Pseudocode  
-Start
-Load JSON file containing library borrow history
+START
 
-Display menu of features:
-1.) Show books not returned yet
-2.) Show total number of books borrowed (per student)
-3.) Show currently borrowed books (per student)
-4.) Show books by author
-5.) Search book by name
-6.) Exit program
+LOAD JSON file (ALE)
 
-Ask user to choose a feature
+REPEAT
+    DISPLAY "Menu:"
+    DISPLAY "1) Show books not returned yet"
+    DISPLAY "2) Show total number of books borrowed (per student)"
+    DISPLAY "3) Show currently borrowed books (per student)"
+    DISPLAY "4) Show books by author"
+    DISPLAY "5) Search book by name"
+    DISPLAY "6) Exit Program"
 
-IF user chooses 1:
-    Display all books where return_date is "null"
+    INPUT choice
 
-ELSE IF user chooses 2:
-   Ask user to enter borrower_id
-   List all books borrowed by the student
-   
-ELSE IF user chooses 3:
-    Ask user to enter borrower_id
-    List all books where return_date is "null" under that       student, otherwise show "You have no currently borrowed books."
-    
-ELSE IF user chooses 4:
-    Ask user to enter author
-    List all books written by that author, otherwise display "Items not found."
+    IF choice == 1 THEN
+        FOR each book in data
+            IF book is not returned
+                DISPLAY book details
+            ENDIF
+        ENDFOR
 
-ELSE IF user chooses 5:
-    Ask user to enter book_title
-    Search JSON data for matching item
-    Display item details if found, otherwise display "Item not found."
+    ELSE IF choice == 2 THEN
+        FOR each student
+            COUNT books borrowed
+            DISPLAY student name + total books borrowed
+        ENDFOR
 
-ELSE IF user chooses 6:
-    End program
+    ELSE IF choice == 3 THEN
+        FOR each student
+            DISPLAY student name
+            FOR each borrowed book
+                IF book is not returned
+                    DISPLAY book details
+                ENDIF
+            ENDFOR
+        ENDFOR
 
-Repeat menu until user chooses to exit
-End Program
+    ELSE IF choice == 4 THEN
+        INPUT author name
+        FOR each book
+            IF book author matches input
+                DISPLAY book details
+            ENDIF
+        ENDFOR
 
+    ELSE IF choice == 5 THEN
+        INPUT book name
+        FOR each book
+            IF book name matches input
+                DISPLAY book details
+            ENDIF
+        ENDFOR
+
+    ELSE IF choice == 6 THEN
+        DISPLAY "Exiting program..."
+        EXIT LOOP
+
+    ELSE
+        DISPLAY "Invalid choice. Try again."
+    ENDIF
+
+UNTIL choice == 6
+
+END
 
 ### Option 2: Flowchart  
+<img width="372" height="532" alt="Screenshot 2026-04-22 at 12 06 06 AM" src="https://github.com/user-attachments/assets/367e7d64-a1f1-4e05-aacd-f1856d7bfc76" />
   
- ![a7665bc9-37c2-412f-8525-4619697e12e4](https://github.com/user-attachments/assets/d87f3837-9d51-4b34-9025-ea3b39b3d1ac)
 ---
 
 ## 📂 GitHub Repository Link
